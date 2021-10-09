@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<style>
+  body {
+    margin: 0;
+    display: flex;
+    justify-content: center;
+  }
+  .container {
+    width: 794px;
+    height: 1122px;
+    /* outline: 1px solid red; */
+    padding: 20px;
+    box-sizing: border-box;
+    line-height: 1.6;
+    color: #444;
+    position: relative;
+  }
+  /* .container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+    width: 200px;
+    border-right: 10px solid #fff;
+    border-top: 10px solid #409EFF;
+    border-left: 10px solid #fff;
+  } */
+  table {
+    border-collapse: collapse;
+  }
+  .header table tr {
+    border-bottom: 1px solid #ddd;
+  }
+  .header table th {
+    width: 70px;
+    text-align: left;
+    font-weight: normal;
+    color: #888;
+  }
+  .header table th::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: #409EFF;
+    border-radius: 50%;
+    margin-right: 6px;
+  }
+  .header table td {
+    width: 180px;
+  }
+  .avatar {
+    position: absolute;
+    right: 20px;
+    top: 110px;
+    width: 160px;
+    height: 200px;
+    background-color: hotpink;
+  }
+
+  section {
+    margin: 20px 0;
+  }
+  section header {
+    /* outline: 1px solid brown; */
+    position: relative;
+    border-bottom: 2px solid #409EFF;
+    height: 30px;
+    padding: 0 0 0 10px;
+    color: #fff;
+  }
+  section header h2 {
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0;
+    padding: 0;
+  }
+  section header::before {
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: -1;
+
+    border-right: 30px solid transparent;
+    border-bottom: 30px solid #409EFF;
+    border-left: 110px solid #409EFF;
+  }
+  section header::after {
+    content: "";
+    position: absolute;
+    left: 140px;
+    bottom: -2px;
+    width: 6px;
+    border-bottom: 2px solid #fff;
+  }
+  section table {
+    width: 100%;
+    color: #409EFF;
+    margin: 10px 0;
+  }
+  section table tr td {
+    width: 33%;
+  }
+  section table tr td:nth-child(2) {
+    text-align: center;
+  }
+  section table tr td:nth-child(3) {
+    text-align: right;
+  }
+
+
+  .icon::before {
+    content: "";
+    display: inline-block;
+    width: 10px;
+    border-top: 6px solid #409EFF;
+    border-right: 6px solid #409EFF;
+    border-bottom: 6px solid #409EFF;
+    border-left: 6px solid transparent;
+    vertical-align: middle;
+    margin-right: 10px;
+  }
+  ul .icon::before {
+    margin-left: -40px;
+    margin-right: 20px;
+  }
+
+</style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <h1>个人简历</h1>
+      <p>求职意向：Web 前端开发</p>
+      <p>期望薪资：￥5000~￥6000</p>
+      <table>
+        <tr>
+          <th>姓名：</th><td>卢忠伟</td>
+          <th>年龄：</th><td>32 岁</td>
+        </tr>
+        <tr>
+          <th>性别：</th><td>男</td>
+          <th>学历：</th><td>中专</td>
+        </tr>
+        <tr>
+          <th>籍贯：</th><td>郑州市中牟县</td>
+          <th>住址：</th><td>郑州市高新区</td>
+        </tr>
+        <tr>
+          <th>电话：</th><td>13838168037</td>
+          <th>状态：</th><td>已离职，可随时到岗</td>
+        </tr>
+      </table>
+      <div class="avatar"></div>
+    </header>
+
+    <section>
+      <header>
+        <h2>掌握技能</h2>
+      </header>
+      
+      <ul>
+        <li>熟悉 HTML、CSS、JavaScript ，能根据设计稿还原页面。</li>
+        <li>熟悉 jQuery、Bootstrap。</li>
+        <li>熟悉 Node.js、Webpack、Vue.js、Vue Router、Vuex、axios、ES6、Element UI。</li>
+        <li>熟悉 Git、SVN、Postman。</li>
+        <li>了解 PHP、Laravel、Linux、MySQL、MongoDB、Express、Koa2、RESTful API 设计规范。</li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h2>项目经历</h2>
+      </header>
+      <ul>
+        <li style="list-style-type: none;">
+          <p class="icon">后台管理项目</p>
+          <ul>
+            <li>养老信息管理。界面类似于 vue-element-admin ，但使用的框架不一样。框架是一个老员工找的没有名字的框架，主要是使用 jQuery + Bootstrap 。</li>
+            <li>
+              主要是根据后端接口进行信息的增删改查。后端使用的是 Laravel + MySQL 。
+            </li>
+            <li>
+              由于涉及公司机密，无法提供项目地址。
+            </li>
+          </ul>
+        </li>
+
+        <li style="list-style-type: none;">
+          <p class="icon">手机端项目</p>
+          <ul>
+            <li>调查问卷。使用纯 HTML、CSS、JavaScript 编写。
+            </li>
+            <li>项目地址：<a href="http://116.63.38.70:38002/Customer/Index/investigation" target="_blank">http://116.63.38.70:38002/Customer/Index/investigation</a></li>
+          </ul>
+        </li>
+
+        <li style="list-style-type: none;">
+          <p class="icon">聊天室</p>
+          <ul>
+            <li>前端界面使用 Vue.js + Element UI 构建。数据交互使用 https://socket.io/ 提供的客户端。</li>
+            <li>项目演示：<a href="https://lucodestation.github.io/lucodestation-chatroom/" target="_blank">https://lucodestation.github.io/lucodestation-chatroom/</a>，后端代码托管在 Glitch 上，首次访问有点慢。</li>
+            <li>项目源码：<a href="https://github.com/lucodestation/lucodestation-chatroom-source" target="_blank">https://github.com/lucodestation/lucodestation-chatroom-source</a></li>
+            <li>后端使用 Node.js + socket.io 。</li>
+          </ul>
+        </li>
+
+        <li style="list-style-type: none;">
+          <p class="icon">其它 DEMO</p>
+          <ul>
+            <li><a href="https://lucodestation.github.io/demo/" target="_blank">DEMO 列表</a></li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section>
+      <header>
+        <h2>教育经历</h2>
+      </header>
+      <table>
+        <tr>
+          <td>2005~2008</td>
+          <td>中牟县职业中等专业学校</td>
+          <td>计算机专业</td>
+        </tr>
+      </table>
+
+      <p class="icon">
+        主修课程:计算机基础、计算机网络、操作系统、计算机编程、Photoshop。
+      </p>
+    </section>
+
+    <section>
+      <header>
+        <h2>工作经历</h2>
+      </header>
+      <table>
+        <tr>
+          <td>2013.07~2017.11</td>
+          <td>郑州嘉盛科技</td>
+          <td>技术主管</td>
+        </tr>
+      </table>
+      <p class="icon">
+        负责办公单位、网吧、中介公司等的电脑组装、网络部署、监控安装以及后期维护。
+      </p>
+      <p>
+        2013 年之前做过其它工作，不过都和 Web 前端无关。
+      </p>
+    </section>
+
+    <section>
+      <header>
+        <h2>个人评价</h2>
+      </header>
+      <p>我认真负责、吃苦耐劳，能很快适应工作环境进入工作状态，充分发挥自己的能力，不断为公司创造价值。</p>
+    </section>
+
+    <section>
+      <header>
+        <h2>其它</h2>
+      </header>
+      <p>离开上一家公司这段期间，主要是在家照顾宝宝，宝宝太小，没人照看。我一边照顾宝宝，一边学习前端开发。不知道你们照顾过宝宝没有，真的太难了，最主要的是没有连续的长时间的空闲时间来学习，都是很碎很碎的时间。</p>
+      <p>宝宝快 3 岁了，刚送回老家上幼儿园。我终于自由了，终于有时间找工作了。</p>
+      <p>我对编程有浓厚的兴趣，上学时编程能力那绝对是是班上数一数二的。现在打算在前端长期发展，现渴望一个工作机会，共同学习，共同进步，共同发展。</p>
+    </section>
+  </div>
+</body>
+</html>

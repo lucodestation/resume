@@ -1,0 +1,119 @@
+.container {
+  width: 794px;
+  height: 1122px;
+  /* outline: 1px solid red; */
+  padding: 20px;
+  box-sizing: border-box;
+  line-height: 1.6;
+  color: #444;
+  position: relative;
+}
+.container::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  margin: auto;
+  width: 200px;
+  border-right: 10px solid #fff;
+  border-top: 10px solid #409EFF;
+  border-left: 10px solid #fff;
+}
+table {
+  border-collapse: collapse;
+}
+.header table tr {
+  border-bottom: 1px solid #ddd;
+}
+.header table th {
+  width: 80px;
+  text-align: left;
+  font-weight: normal;
+  color: #888;
+}
+.header table th::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  background-color: #409EFF;
+  border-radius: 50%;
+  margin-right: 6px;
+}
+.header table td {
+  width: 180px;
+}
+.avatar {
+  position: absolute;
+  right: 20px;
+  top: 110px;
+  width: 160px;
+  height: 200px;
+  background-color: hotpink;
+}
+
+section {
+  margin: 20px 0;
+}
+section header {
+  /* outline: 1px solid brown; */
+  position: relative;
+  border-bottom: 2px solid #409EFF;
+  height: 30px;
+  padding: 0 0 0 10px;
+  color: #fff;
+}
+section header h2 {
+  font-size: 20px;
+  line-height: 30px;
+  margin: 0;
+  padding: 0;
+}
+section header::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+
+  border-right: 30px solid #fff;
+  border-bottom: 30px solid #409EFF;
+  border-left: 150px solid #409EFF;
+}
+section header::after {
+  content: "";
+  position: absolute;
+  left: 180px;
+  bottom: -2px;
+  width: 6px;
+  border-bottom: 2px solid #fff;
+}
+section table {
+  width: 100%;
+  color: #409EFF;
+}
+section table tr td:nth-child(1) {}
+section table tr td:nth-child(2) {
+  text-align: center;
+}
+section table tr td:nth-child(3) {
+  text-align: right;
+}
+
+
+.icon::before {
+  content: "";
+  display: inline-block;
+  width: 10px;
+  border-top: 6px solid #409EFF;
+  border-right: 6px solid #409EFF;
+  border-bottom: 6px solid #409EFF;
+  border-left: 6px solid #fff;
+  vertical-align: middle;
+  margin-right: 10px;
+}
+ul .icon::before {
+  margin-left: -40px;
+  margin-right: 20px;
+}
