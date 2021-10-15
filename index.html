@@ -1,142 +1,184 @@
 <!DOCTYPE html>
 <html lang="zh-CN">
-<head>
-<meta charset="UTF-8">
-<meta http-equiv="X-UA-Compatible" content="IE=edge">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Document</title>
-<link rel="stylesheet" href="./index.css">
-</head>
-<body>
-  <div class="container">
-    <header class="header">
-      <h1>个人简历</h1>
-      <!-- <p>求职意向：Web 前端开发</p> -->
-      <!-- <p>期望薪资：￥5000~￥6000</p> -->
-      <table>
-        <tr>
-          <th>姓名：</th><td>卢忠伟</td>
-          <th>年龄：</th><td>32 岁</td>
-        </tr>
-        <tr>
-          <th>性别：</th><td>男</td>
-          <th>求职意向：</th><td>Web 前端开发</td>
-        </tr>
-        <tr>
-          <th>邮箱：</th><td>627526171@qq.com</td>
-          <th>住址：</th><td>郑州市高新区</td>
-        </tr>
-        <tr>
-          <th>电话：</th><td>13838168037</td>
-          <th>状态：</th><td>已离职，可随时到岗</td>
-        </tr>
-        <tr>
-          <th>期望薪资：</th><td>￥5000~￥6000</td>
-
-        </tr>
-      </table>
-      <div class="avatar"><img src="./avatar.jpg" alt="头像"></div>
-    </header>
-
-    <section>
-      <header>
-        <h2>掌握技能</h2>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./index.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <h1>个人简历</h1>
+        <!-- <p>求职意向：Web 前端开发</p> -->
+        <!-- <p>期望薪资：￥5000~￥6000</p> -->
+        <table>
+          <tr>
+            <th>姓名：</th>
+            <td>卢忠伟</td>
+            <th>年龄：</th>
+            <td>32 岁</td>
+          </tr>
+          <tr>
+            <th>性别：</th>
+            <td>男</td>
+            <th>求职意向：</th>
+            <td>Web 前端开发</td>
+          </tr>
+          <tr>
+            <th>邮箱：</th>
+            <td>627526171@qq.com</td>
+            <th>住址：</th>
+            <td>郑州市高新区</td>
+          </tr>
+          <tr>
+            <th>电话：</th>
+            <td>13838168037</td>
+            <th>状态：</th>
+            <td>已离职，可随时到岗</td>
+          </tr>
+          <tr>
+            <th>期望薪资：</th>
+            <td>￥5000~￥6000</td>
+          </tr>
+        </table>
+        <div class="avatar"><img src="./avatar.jpg" alt="头像" /></div>
       </header>
-      
-      <ul>
-        <li>熟悉 HTML、CSS、JavaScript ，能根据设计稿还原页面。</li>
-        <li>熟悉 jQuery、Bootstrap。</li>
-        <li>熟悉 Node.js、Webpack、Vue.js、Vue Router、Vuex、axios、ES6、Element UI。</li>
-        <li>熟悉 Git、SVN、Postman。</li>
-        <li>了解 PHP、Laravel、Linux、MySQL、MongoDB、Express、Koa2、RESTful API 设计规范。</li>
-      </ul>
-    </section>
 
-    <section>
-      <header>
-        <h2>项目经历</h2>
-      </header>
-      <div>
-        <h3 class="icon">信息管理平台</h3>
-            <ul>
-              <li>框架采用MVC，前后端分离设计，前端采用 jQuery + Bootstrap + Handlebars , 后端采用 Laravel。数据库采用 MySQL。</li>
-              <li>主要是负责前端功能的实现。</li>
-              <li>作品可线上展示。</li>
-            </ul>
-      </div>
+      <section>
+        <header>
+          <h2>掌握技能</h2>
+        </header>
 
-      <div>
-        <h3 class="icon">调查问卷</h3>
-            <ul>
-              <li>手机端项目。使用 HTML、CSS、jQuery 编写。</li>
-              <li>项目预览地址：<a href="http://116.63.38.70:38002/Customer/Index/investigation" target="_blank">http://116.63.38.70:38002/Customer/Index/investigation</a></li>
-            </ul>
-      </div>
+        <ul>
+          <li>熟悉 HTML、CSS、JavaScript ，能根据设计稿还原页面。</li>
+          <li>熟悉 jQuery、Bootstrap。</li>
+          <li>
+            熟悉 Node.js、Webpack、Vue.js、Vue Router、Vuex、axios、ES6、Element
+            UI。
+          </li>
+          <li>熟悉 Git、SVN、Postman。</li>
+          <li>
+            了解 PHP、Laravel、Linux、MySQL、MongoDB、Express、Koa2、RESTful API
+            设计规范。
+          </li>
+        </ul>
+      </section>
 
-      <div>
-        <h3 class="icon">聊天室</h3>
-            <ul>
-              <li>这个项目是练手用的。</li>
-              <li>前端界面使用 Vue.js + Element UI 构建。数据交互使用 https://socket.io/ 提供的客户端。</li>
-              <li>项目演示：<a href="https://lucodestation.github.io/lucodestation-chatroom/" target="_blank">https://lucodestation.github.io/lucodestation-chatroom/</a>，后端代码托管在 Glitch 上，首次访问有点慢。</li>
-              <li>前端项目源码：<a href="https://github.com/lucodestation/lucodestation-chatroom-source" target="_blank">https://github.com/lucodestation/lucodestation-chatroom-source</a></li>
-              <li>后端使用 Node.js + socket.io 。</li>
-            </ul>
-      </div>
-    </section>
+      <section>
+        <header>
+          <h2>项目经历</h2>
+        </header>
+        <div>
+          <h3 class="icon">信息管理平台</h3>
+          <ul>
+            <li>
+              框架采用MVC，前后端分离设计，前端采用 jQuery + Bootstrap +
+              Handlebars , 后端采用 Laravel。数据库采用 MySQL。
+            </li>
+            <li>主要是负责前端功能的实现。</li>
+            <li>作品可线上展示。</li>
+          </ul>
+        </div>
 
-    <section>
-      <header>
-        <h2>教育经历</h2>
-      </header>
-      <table>
-        <tr>
-          <td>2005~2008</td>
-          <td>中牟县职业中等专业学校</td>
-          <td>计算机专业</td>
-        </tr>
-      </table>
+        <div>
+          <h3 class="icon">调查问卷</h3>
+          <ul>
+            <li>手机端项目。使用 HTML、CSS、jQuery 编写。</li>
+            <li>
+              项目预览地址：
+              <img
+                class="qr-code"
+                src="./project2.png"
+                alt="调查问卷项目二维码"
+              />
+            </li>
+          </ul>
+        </div>
 
-      <p class="icon">
-        主修课程:计算机基础、计算机网络、操作系统、计算机编程、Photoshop。
-      </p>
-    </section>
+        <div>
+          <h3 class="icon">聊天室</h3>
+          <ul>
+            <li>这个项目是练手用的。</li>
+            <li>
+              前端界面使用 Vue.js + Element UI 构建。数据交互使用
+              https://socket.io/ 提供的客户端。
+            </li>
+            <li>
+              项目演示：<a
+                href="https://lu-chatroom.vercel.app/"
+                target="_blank"
+                >https://lu-chatroom.vercel.app/</a
+              >，后端代码托管在 Glitch 上，首次访问有点慢。
+            </li>
+            <li>
+              前端项目源码：<a
+                href="https://github.com/lucodestation/lu-chatroom"
+                target="_blank"
+                >https://github.com/lucodestation/lu-chatroom</a
+              >
+            </li>
+            <li>后端使用 Node.js + socket.io 。</li>
+          </ul>
+        </div>
+      </section>
 
-    <section>
-      <header>
-        <h2>工作经历</h2>
-      </header>
-      <table>
-        <tr>
-          <td>2013.07~2017.11</td>
-          <td>郑州嘉盛科技</td>
-          <td>技术主管</td>
-        </tr>
-      </table>
-      <p class="icon">
-        负责办公单位、网吧、中介公司等的电脑组装、网络部署、监控安装以及后期维护。
-      </p>
+      <section>
+        <header>
+          <h2>教育经历</h2>
+        </header>
+        <table>
+          <tr>
+            <td>2005~2008</td>
+            <td>中牟县职业中等专业学校</td>
+            <td>计算机专业</td>
+          </tr>
+        </table>
 
-      <table>
-        <tr>
-          <td>2018 ~ 至今</td>
-          <td>郑州大象通信</td>
-          <td>前端工程师</td>
-        </tr>
-      </table>
-      <p class="icon">
-        有前后端分离项目经验，负责前端功能实现。及H5页面设计。
-      </p>
-    </section>
+        <p class="icon">
+          主修课程:计算机基础、计算机网络、操作系统、计算机编程、Photoshop。
+        </p>
+      </section>
 
-    <section>
-      <header>
-        <h2>个人评价</h2>
-      </header>
-      <p>我认真负责、吃苦耐劳，自学能力强，能很快适应工作环境进入工作状态，充分发挥自己的能力，不断为公司创造价值。</p>
-      <p>我对编程有浓厚的兴趣，已有项目经验，现打算在前端长期发展，渴望一个工作机会，共同学习，共同进步，共同发展。</p>
-    </section>
+      <section>
+        <header>
+          <h2>工作经历</h2>
+        </header>
+        <table>
+          <tr>
+            <td>2013.07~2017.11</td>
+            <td>郑州嘉盛科技</td>
+            <td>技术主管</td>
+          </tr>
+        </table>
+        <p class="icon">
+          负责办公单位、网吧、中介公司等的电脑组装、网络部署、监控安装以及后期维护。
+        </p>
 
-  </div>
-</body>
+        <table>
+          <tr>
+            <td>2018 ~ 至今</td>
+            <td>郑州大象通信</td>
+            <td>前端工程师</td>
+          </tr>
+        </table>
+        <p class="icon">
+          有前后端分离项目经验，负责前端功能实现。及H5页面设计。
+        </p>
+      </section>
+
+      <section>
+        <header>
+          <h2>个人评价</h2>
+        </header>
+        <p>
+          我认真负责、吃苦耐劳，自学能力强，能很快适应工作环境进入工作状态，充分发挥自己的能力，不断为公司创造价值。
+        </p>
+        <p>
+          我对编程有浓厚的兴趣，已有项目经验，现打算在前端长期发展，渴望一个工作机会，共同学习，共同进步，共同发展。
+        </p>
+      </section>
+    </div>
+  </body>
 </html>
