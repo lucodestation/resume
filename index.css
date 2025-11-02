@@ -139,21 +139,35 @@ section table tr td:nth-child(3) {
   text-align: right;
 }
 
-.icon::before {
-  content: "";
-  display: inline-block;
-  width: 10px;
+.icon {
+  display: inline-flex;
+  align-items: center;
+  /* width: 10px;
   border-top: 6px solid var(--main-blue-color);
   border-right: 6px solid var(--main-blue-color);
   border-bottom: 6px solid var(--main-blue-color);
   border-left: 6px solid transparent;
   vertical-align: 1px;
-  margin-right: 10px;
+  margin-right: 10px; */
+  width: 24px;
+  height: 12px;
+  background-color: var(--main-blue-color);
+  position: relative;
+  margin-right: 5px;
 }
-ul .icon::before {
+.icon::after {
+  content: "";
+  position: absolute;
+  left: -1px;
+  border-top: 6px solid transparent;
+  border-right: 8px solid transparent;
+  border-bottom: 6px solid transparent;
+  border-left: 8px solid #fff;
+}
+/* ul .icon {
   margin-left: -40px;
   margin-right: 20px;
-}
+} */
 
 /* .qr-code {
   width: 150px;
